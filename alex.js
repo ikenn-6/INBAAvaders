@@ -6,13 +6,15 @@ function tir(e)
   {
 	  var projectile = document.createElement("DIV");
 	  projectile.classList.add("projectile");
-	  	  
+	  projectile.style.top = "300px";
+
+	  
+	 // var milieuJoueur = parseInt(document.getElementById("joueur").style.left) + (parseInt(document.getElementById("joueur").style.width)) + "px";
+	  
+	  var milieuJoueur = "150px";
+	  projectile.style.left = milieuJoueur;
 	  document.getElementById("testTir").appendChild(projectile); 
 	  
-	  //recuperer la position du joueur
-	  //en attendant la position est en dur dans la classe
-	  document.getElementsByClassName("projectile").item(0).style.top = "300px"; //a changer!
-	 // document.getElementsByClassName("projectile").item(1).style.top = "300px"; //a changer!
 	  
 	  setInterval(mouvementProjectile, 500);
   } 
