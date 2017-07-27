@@ -1,0 +1,15 @@
+#testTir
+{
+	height:500px;
+	width:500px;
+	background-color: lightblue;
+}
+
+.projectile
+{
+	height:50px;
+	width:50px;
+	background-color: green;
+	position: absolute;
+	left: 100px;
+}
