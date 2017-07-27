@@ -1,0 +1,9 @@
+.color{
+    background-color:black;
+    color:white;
+}
+.deplacementalien{
+    width:500px;
+    position:absolute;
+    top:0px;
+}
