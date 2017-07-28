@@ -1,5 +1,9 @@
 document.addEventListener("keydown", tir, false);
 var dernierTir = new Date();
+var posAlien = setInterval(calculPositionAlien, 1000);
+
+var tabAlien = [];
+
 
 function tir(e) 
 {
@@ -10,7 +14,7 @@ function tir(e)
 	//alert(dernierTir);
 	if(currentTime - dernierTir > 1000 && e.keyCode==32)
 	{		
-		console.log(currentTime);
+		//console.log(currentTime);
 			dernierTir = new Date();
 			var projectile = document.createElement("DIV");
 			projectile.classList.add("projectile");
@@ -42,4 +46,24 @@ function mouvementProjectile()
 function stopMouvementProjectile()
 {
 	
+}
+
+function calculPositionAlien()
+{
+	for(i=0;i<55;i++)
+	{
+		var idAl = "alien" +i;
+		
+		//console.log(document.getElementById(idAl));
+		//console.log(document.getElementById(idAl).getAttribute("left"));
+		//console.log(document.getElementById(idAl).style.left);
+		//console.log(document.getElementById(idAl).style.top);
+		
+        var positionLeftAlien = parseInt(document.getElementById(idAl).getAttribute("left"));
+        var positionTopAlien = parseInt(document.getElementById(idAl).getAttribute("top"));
+        
+        tabAlien[i][1] = positionLeftAlien;
+        tabAlien[i][2] = positionTopAlien;
+        //console.log(tabAlien);
+	}
 }
