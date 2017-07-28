@@ -1,11 +1,45 @@
+body{
+    border:1px black solid;
+    width:800px;
+    height:800px;
+}
+.jeu{
+    height:800px;
+    background-color:black;
+}
 .color{
-    background-color:white;
+    color:white;
+    background-color:black
+}
+.imagextra{
+    width:65px;
 }
 .deplacementalien{
-    width:500px;
+    margin-left:10px;
+    margin-top:50px;
     position:absolute;
-    top:0px;
 }
-body{
-    background-color:black;
+#testTir
+{
+	height:500px;
+	width:500px;
+}
+
+#joueur
+{
+	height:50px;
+	width:100px;
+	background-color: red;
+	position: absolute;
+	left: 100px;
+	top: 700px;
+}
+
+.projectile
+{
+	height:25px;
+	width:25px;
+	background-color: green;
+	position: absolute;
+	left: 100px;
 }
