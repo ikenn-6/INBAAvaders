@@ -1,0 +1,39 @@
+body{
+    border:1px black solid;
+    width:800px;
+    height:600px;
+}
+.jeu{
+    height:600px;
+    background-color:black;
+}
+.color{
+    color:white;
+    background-color:black;
+}
+.imagextra{
+    width:65px;
+    height:55px;
+}
+.deplacementalien{
+    margin-left:10px;
+    margin-top:50px;
+    position:absolute;
+}
+#joueur
+{
+	height:50px;
+	width:100px;
+	background-color: red;
+	position: absolute;
+	top: 500px;
+    left:100px;
+}
+
+.projectile
+{
+	height:25px;
+	width:25px;
+	background-color: green;
+	position: absolute;
+}
