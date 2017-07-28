@@ -20,9 +20,9 @@ function tir(e)
 			projectile.classList.add("projectile");
 			projectile.style.top = "500px";
 
-			//var milieuJoueur = parseInt(document.getElementById("joueur").style.left) + (parseInt(document.getElementById("joueur").style.width)) / 2 + "px";
+			var milieuJoueur = parseInt(document.getElementById("vaisseau").style.left) + "px";
 			//A remplacer
-			var milieuJoueur = "150px";
+			//var milieuJoueur = "150px";
 			projectile.style.left = milieuJoueur;
 			document.getElementById("testTir").appendChild(projectile); 
 		  
