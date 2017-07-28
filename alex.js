@@ -16,18 +16,20 @@ function tir(e)
 	{		
 		//console.log(currentTime);
 			dernierTir = new Date();
-			var projectile = document.createElement("DIV");
+			var projectile = document.createElement("img");
+                        projectile.setAttribute("src","images/projectile.JPG")
 			projectile.classList.add("projectile");
 			projectile.style.top = "500px";
 			projectile.style.left = "500px";//
 
 			//var milieuJoueur = parseInt(document.getElementById("joueur").style.left) + (parseInt(document.getElementById("joueur").style.width)) / 2 + "px";
+			var milieuJoueur = parseInt(document.getElementById("vaisseau").style.left) + "px";
 			//A remplacer
 			//var milieuJoueur = "150px";
-			//projectile.style.left = milieuJoueur;
+			projectile.style.left = milieuJoueur;
 			document.getElementById("testTir").appendChild(projectile); 
 		  
-			setInterval(mouvementProjectile, 100);
+			setInterval(mouvementProjectile, 500);
 	}
 }
 
