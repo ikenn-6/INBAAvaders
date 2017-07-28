@@ -16,7 +16,8 @@ function tir(e)
 	{		
 		//console.log(currentTime);
 			dernierTir = new Date();
-			var projectile = document.createElement("DIV");
+			var projectile = document.createElement("img");
+                        projectile.setAttribute("src","images/projectile.JPG")
 			projectile.classList.add("projectile");
 			projectile.style.top = "500px";
 
