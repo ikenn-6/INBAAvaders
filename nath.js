@@ -19,7 +19,7 @@ function shiftingextra(){
     if(directionalien == true ){
         document.getElementById("alien").style.left = leftalien + 1 + "px";
     }
-    if(topalien >= 200){
+    if(topalien >= 150){
         clearInterval(stop);
     }
 }
