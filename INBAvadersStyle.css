@@ -1,9 +1,11 @@
 .color{
-    background-color:black;
-    color:white;
+    background-color:white;
 }
 .deplacementalien{
     width:500px;
     position:absolute;
     top:0px;
+}
+body{
+    background-color:black;
 }
