@@ -1,10 +1,10 @@
 body{
     border:1px black solid;
     width:800px;
-    height:800px;
+    height:600px;
 }
 .jeu{
-    height:800px;
+    height:600px;
     background-color:black;
 }
 .color{
@@ -20,20 +20,14 @@ body{
     margin-top:50px;
     position:absolute;
 }
-#testTir
-{
-	height:500px;
-	width:500px;
-}
-
 #joueur
 {
 	height:50px;
 	width:100px;
 	background-color: red;
 	position: absolute;
-	left: 100px;
-	top: 700px;
+	top: 500px;
+        left:100px;
 }
 
 .projectile
@@ -42,5 +36,4 @@ body{
 	width:25px;
 	background-color: green;
 	position: absolute;
-	left: 100px;
 }
