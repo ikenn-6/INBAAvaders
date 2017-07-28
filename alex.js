@@ -19,14 +19,15 @@ function tir(e)
 			var projectile = document.createElement("DIV");
 			projectile.classList.add("projectile");
 			projectile.style.top = "500px";
+			projectile.style.left = "500px";//
 
-			var milieuJoueur = parseInt(document.getElementById("joueur").style.left) + (parseInt(document.getElementById("joueur").style.width)) / 2 + "px";
+			//var milieuJoueur = parseInt(document.getElementById("joueur").style.left) + (parseInt(document.getElementById("joueur").style.width)) / 2 + "px";
 			//A remplacer
 			//var milieuJoueur = "150px";
-			projectile.style.left = milieuJoueur;
+			//projectile.style.left = milieuJoueur;
 			document.getElementById("testTir").appendChild(projectile); 
 		  
-			setInterval(mouvementProjectile, 500);
+			setInterval(mouvementProjectile, 100);
 	}
 }
 

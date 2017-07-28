@@ -1,5 +1,5 @@
 
-    var stop = setInterval(shiftingextra2, 100);
+    //var stop = setInterval(shiftingextra, 1000);
     var directionalien = true;
     
 function shiftingextra(){
@@ -20,31 +20,43 @@ function shiftingextra(){
     if(directionalien == true ){
         document.getElementById("alien").style.left = leftalien + 1 + "px";
     }
-    if(topalien >= 150){
+    if(topalien >= 200){
         clearInterval(stop);
     }
 }
 
 function shiftingextra2(){
-    var leftalien = parseInt(document.getElementById("alien").style.left);
-    var topalien = parseInt(document.getElementById("alien").style.top);
-        for(i=0; i<55; i++){
+	  
+	for(i=0; i<55; i++){
+        
+        var idAlien = "alien" +i;
+        var leftalien = parseInt(document.getElementById(idAlien).style.left);
+        var topalien = parseInt(document.getElementById(idAlien).style.top);
+        // deplacer vers le bas une fois arrivé au bord.
     if(leftalien >= 75){
-        document.getElementById("alien").style.top = topalien + 5 + "px";
+        document.getElementById(idAlien).style.top = topalien + 5 + "px";
         directionalien = false;
+        console.log(document.getElementById(idAlien).style.top);
     }
     if(leftalien <= 0){
-        document.getElementById("alien").style.top = topalien + 5 + "px";
+        document.getElementById(idAlien).style.top = topalien + 5 + "px";
         directionalien = true;
+        
     }
+    // deplacer droite gauche.
     if(directionalien == false){
-        document.getElementById("alien").style.left = leftalien - 1 + "px";
+        document.getElementById(idAlien).style.left = leftalien - 1 + "px";
+        
     }
     if(directionalien == true ){
-        document.getElementById("alien").style.left = leftalien + 1 + "px";
+        document.getElementById(idAlien).style.left = leftalien + 1 + "px";
+        
+        
     }
+    //Fon d'la game.
     if(topalien >= 200){
         clearInterval(stop);
+        
     }
         }
 }
@@ -62,6 +74,7 @@ function load(){
 	//Positionnement du bloc des aliens
     document.getElementById("alien").style.left = "0px";
     document.getElementById("alien").style.top = "0px";
+    document.getElementById('alien').style.height = "300px";
     
     var decalTop = 55;
     var decalLeft = 65;
@@ -114,16 +127,22 @@ function load(){
         	}
         	//listeImages[i].setAttribute("left", currentLeft);
         	//listeImages[i].setAttribute("top", currentTop);
-        	//listeImages[i].style.left= currentLeft + "px";
-        	//listeImages[i].style.top= currentTop + "px";
+        	listeImages[i].style.left= currentLeft + "px";
+        	listeImages[i].style.top= currentTop + "px";
     	}
     	if(i> 0 && i<=10)
     	{
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
+        	
         	listeImages[i].setAttribute("left", currentLeft);
         	listeImages[i].setAttribute("top", 0);
         	listeImages[i].setAttribute("position", "absolute");
+        	
+        	
+        	//listeImages[i].style.left = currentLeft + "px";
+        	//listeImages[i].style.top = 0 +"px";
+        	//listeImages[i].style.position = "absolute";
     	}
     	if(i> 11 && i<=21)
     	{

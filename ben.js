@@ -1,3 +1,7 @@
+var checkcolli = setInterval(collision, 100);
+
+
+
 /*function load() {
      document.getElementById("first").style.left = "101px";
      document.getElementById("second").style.left = "180px";
@@ -9,35 +13,35 @@
 
 
 
-function monter(dx, dy) {
+function collision() {
     
     
-if (event.keyCode == 40) {
 
+       
+       
+      var  projectile1 = document.getElementsByClassName('projectile')[0];
       
-       document.getElementById("second").style.top = parseInt(document.getElementById("second").style.top) - dy + 'px';
-       
-       
-       
-       
-        var positionbottom = parseInt(document.getElementById('first').style.top);
-        var positionleftA = parseInt(document.getElementById('first').style.left);
-        var positionleftB = parseInt(document.getElementById('second').style.left);
-        var tailleLA = parseInt(document.getElementById('first').style.width);
-        var tailleLB = parseInt(document.getElementById('second').style.width);       
-        var positiontop = parseInt(document.getElementById('second').style.top);
+        var positionbottom = parseInt(document.getElementById('alien').style.top);
+        console.log(positionbottom);
+        var positionleftA = parseInt(document.getElementById('alien').style.left);
+        var positionleftB = parseInt(projectile1.style.left);
+      
+        var tailleLA = parseInt(document.getElementById('alien').style.width);
+        var tailleLB = parseInt(projectile1.style.width);       
+        var positiontop = parseInt(projectile1.style.top);
+        console.log(positiontop);
+        
         
       
-        if (((positiontop == positionbottom) && (positionleftB >= positionleftA && positionleftB <= positionleftA + tailleLA)) 
-                || ((positiontop == positionbottom) && (positionleftB + 100 >= positionleftA && positionleftB  + 100 <= positionleftA + tailleLA))) {
+        if (positiontop <= positionbottom + parseInt(document.getElementById('alien').style.height)) {
+        	
             alert("collision");
             
         }
-        console.log(positionleftB + 100)
-       
+        
+       console.log(parseInt(document.getElementById('alien').style.height));
     }
 
 
    
 
-}
