@@ -70,3 +70,4 @@ function calculPositionAlien()
         //console.log(tabAlien);
 	}
 }
+

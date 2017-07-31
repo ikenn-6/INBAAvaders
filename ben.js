@@ -35,7 +35,8 @@ function collision() {
       
         if (positiontop <= positionbottom + parseInt(document.getElementById('alien').style.height)) {
         	
-            alert("collision");
+         alien.style.visibility = "hidden";
+         projectile1.style.visibility = "hidden";
             
         }
         
