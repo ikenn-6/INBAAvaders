@@ -4,7 +4,7 @@ body{
 }
 .play{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 5%;
     font-family:Impact, fantasy;
     font-size:100px;
 }
@@ -14,5 +14,11 @@ body{
 .play:hover{
     font-size:120px;
     color:green;
+}
+.nom{
+    font-size:150px;
+    text-align: center;
+    margin-top: 5%;
+    font-family:Impact, fantasy;
 }
 
