@@ -29,7 +29,7 @@ function tir(e)
 			projectile.style.left = milieuJoueur;
 			document.getElementById("testTir").appendChild(projectile); 
 		  
-			setInterval(mouvementProjectile, 500);
+			setInterval(mouvementProjectile, 1);
 	}
 }
 
@@ -41,7 +41,7 @@ function mouvementProjectile()
 		//alert(projectiles);
 		//alert(parseInt(document.getElementsByClassName("projectile").item(0).style.top));
 		currentPosition = parseInt(projectiles.item(i).style.top);
-		projectiles.item(i).style.top = currentPosition - 10 + "px";
+		projectiles.item(i).style.top = currentPosition - 1 + "px";
 	}
 
 }

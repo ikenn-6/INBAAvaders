@@ -1,6 +1,6 @@
 
     //var stop = setInterval(shiftingextra, 1000);
-    var stop = setInterval(shiftingextra, 100);
+    var stop = setInterval(shiftingextra, 1);
     var directionalien = true;
     
 function shiftingextra(){
@@ -74,6 +74,7 @@ function load(){
 	//Positionnement du bloc des aliens
     document.getElementById("vaisseau").style.left = "0px";
     document.getElementById("vaisseau").style.top = "500px";
+    document.getElementById("vaisseau").style.width = "100px";
     document.getElementById("alien").style.left = "0px";
     document.getElementById("alien").style.top = "0px";
     document.getElementById('alien').style.height = "300px";
@@ -96,39 +97,37 @@ function load(){
             	listeImages[i].setAttribute("id", "alien"+i);
         		currentLeft = 0;
         		currentTop = 0;
-        		listeImages[i].setAttribute("position", "absolute");
+        		listeImages[i].style.position = "absolute";
         	}
         	if(i == 11)
         	{
             	listeImages[i].setAttribute("id", "alien"+i);
         		currentLeft = 0;
         		currentTop = 55;
-        		listeImages[i].setAttribute("position", "absolute");
+        		listeImages[i].style.position = "absolute";
         	}
         	if(i == 22)
         	{
             	listeImages[i].setAttribute("id", "alien"+i);
         		currentLeft = 0;
         		currentTop = 110;
-        		listeImages[i].setAttribute("position", "absolute");
+        		listeImages[i].style.position = "absolute";
         	}
         	if(i == 33)
         	{
             	listeImages[i].setAttribute("id", "alien"+i);
         		currentLeft = 0;
         		currentTop = 165;
-        		listeImages[i].setAttribute("position", "absolute");
+        		listeImages[i].style.position = "absolute";
         	}
         	if(i == 44)
         	{
             	listeImages[i].setAttribute("id", "alien"+i);
         		currentLeft = 0;
         		currentTop = 220;
-        		listeImages[i].setAttribute("position", "absolute");
+        		listeImages[i].style.position = "absolute";
         		
         	}
-        	//listeImages[i].setAttribute("left", currentLeft);
-        	//listeImages[i].setAttribute("top", currentTop);
         	listeImages[i].style.left= currentLeft + "px";
         	listeImages[i].style.top= currentTop + "px";
     	}
@@ -137,46 +136,46 @@ function load(){
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
         	
-        	listeImages[i].setAttribute("left", currentLeft);
+        	/*listeImages[i].setAttribute("left", currentLeft);
         	listeImages[i].setAttribute("top", 0);
-        	listeImages[i].setAttribute("position", "absolute");
+        	listeImages[i].setAttribute("position", "absolute");*/
         	
         	
-        	//listeImages[i].style.left = currentLeft + "px";
-        	//listeImages[i].style.top = 0 +"px";
-        	//listeImages[i].style.position = "absolute";
+        	listeImages[i].style.left = currentLeft + "px";
+        	listeImages[i].style.top = 0 +"px";
+        	listeImages[i].style.position = "absolute";
     	}
     	if(i> 11 && i<=21)
     	{
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
-        	listeImages[i].setAttribute("left", currentLeft);
-        	listeImages[i].setAttribute("top", 55);
-        	listeImages[i].setAttribute("position", "absolute");
+        	listeImages[i].style.position = "absolute";
+        	listeImages[i].style.left = currentLeft + "px";
+        	listeImages[i].style.top = 55 +"px";
     	}
     	if(i> 22 && i<=32)
     	{
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
-        	listeImages[i].setAttribute("left", currentLeft);
-        	listeImages[i].setAttribute("top", 110);
-        	listeImages[i].setAttribute("position", "absolute");
+        	listeImages[i].style.position = "absolute";
+        	listeImages[i].style.left = currentLeft + "px";
+        	listeImages[i].style.top = 110 +"px";
     	}
     	if(i> 33 && i<=43)
     	{
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
-        	listeImages[i].setAttribute("left", currentLeft);
-        	listeImages[i].setAttribute("top", 165);
-        	listeImages[i].setAttribute("position", "absolute");
+        	listeImages[i].style.position = "absolute";
+        	listeImages[i].style.left = currentLeft + "px";
+        	listeImages[i].style.top = 165 +"px";
     	}
     	if(i> 44 && i<=54)
     	{
     		currentLeft += decalLeft;
         	listeImages[i].setAttribute("id", "alien"+i);
-        	listeImages[i].setAttribute("left", currentLeft);
-        	listeImages[i].setAttribute("top", 220);
-        	listeImages[i].setAttribute("position", "absolute");
+        	listeImages[i].style.position = "absolute";
+        	listeImages[i].style.left = currentLeft + "px";
+        	listeImages[i].style.top = 220 +"px";
     	}
     }
     

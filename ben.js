@@ -40,7 +40,7 @@ function collision() {
          projectile1.style.visibility = "hidden";
         
         }
-        if(alien.style.visibility = "hidden" == true){
+        else if(alien.style.visibility = "hidden" == true){
              alien1.setAttribute("src","images/explode.gif");
         }
         
