@@ -20,6 +20,7 @@ function collision() {
        
        
       var  projectile1 = document.getElementsByClassName('projectile')[0];
+      var  alien1 = document.getElementById("explode");
       
         var positionbottom = parseInt(document.getElementById('alien').style.top);
         console.log(positionbottom);
@@ -37,7 +38,10 @@ function collision() {
         	
          alien.style.visibility = "hidden";
          projectile1.style.visibility = "hidden";
-            
+        
+        }
+        if(alien.style.visibility = "hidden" == true){
+             alien1.setAttribute("src","images/explode.gif");
         }
         
        console.log(parseInt(document.getElementById('alien').style.height));
