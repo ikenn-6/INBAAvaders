@@ -13,8 +13,10 @@ body{
 }
 .deplacementalien{
     margin-left:10px;
-    margin-top:50px;
-    position:absolute;
+    
+    background-color : red;
+    position : absolute;
+    
 }
 .joueur
 {
