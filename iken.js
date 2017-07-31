@@ -8,6 +8,3 @@ function bouger() {
         document.getElementById("vaisseau").style.left = bouger - 10 + 'px';
     }
 }
-function loadi(){
-    document.getElementById("vaisseau").style.left = "0px";
-}

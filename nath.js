@@ -72,7 +72,8 @@ function shiftingextra2(){
 
 function load(){
 	//Positionnement du bloc des aliens
-	  document.getElementById("vaisseau").style.top = "500px";
+    document.getElementById("vaisseau").style.left = "0px";
+    document.getElementById("vaisseau").style.top = "500px";
     document.getElementById("alien").style.left = "0px";
     document.getElementById("alien").style.top = "0px";
     document.getElementById('alien').style.height = "300px";
