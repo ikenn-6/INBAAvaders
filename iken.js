@@ -1,3 +1,4 @@
+//déplacement du vaisseau
 function bouger() {
     var bouger = parseInt(document.getElementById("vaisseau").style.left);
 

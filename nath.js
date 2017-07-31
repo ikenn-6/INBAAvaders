@@ -1,5 +1,5 @@
 
-    //var stop = setInterval(shiftingextra, 1000);
+    //Déplacement aléatoire des alien
     var stop = setInterval(shiftingextra, 1);
     var directionalien = true;
     
