@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Menu</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style2.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="INBAvadersStyle.css" />
+        <title>INBAvaders</title>
+        <script src="iken.js"></script>
+        <script src="nath.js"></script>
+        <script src="ben.js"></script>
+        <script src="alex.js"></script>
     </head>
-    <body>
-        <h1 class="nom">INBAvaders</h1>
-        <div class="play">
-        <a href="index.html" class="none">PLAY</a>
+    <body onkeydown="bouger()" onload="load()">
+        <div class="jeu">
+            <div class="color deplacementalien" id="alien">
+                <div>
+                    <img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/><img src="images/premier.gif" class="imagextra"/>
+                </div>
+                <div>
+                    <img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/>
+                </div>
+                <div>
+                    <img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/><img src="images/deuxieme.gif" class="imagextra"/>
+                </div>
+                <div>
+                    <img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/>
+                </div>
+                <div>
+                    <img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/><img src="images/troisieme.gif" class="imagextra"/>
+                </div>
+            </div>
+            <div id="testTir">
+                <img src="images/vaisseau.jpg" class="joueur" id="vaisseau"/>
+            </div>
         </div>
     </body>
 </html>

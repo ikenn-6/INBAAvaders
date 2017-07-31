@@ -22,6 +22,7 @@ function shiftingextra(){
     }
     if(topalien >= 150){
         clearInterval(stop);
+        document.location.href="index4.html";
     }
 }
 
