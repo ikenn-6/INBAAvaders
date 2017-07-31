@@ -1,5 +1,5 @@
 //déplacement du vaisseau
-function bouger() {
+function bouger(event) {
     var bouger = parseInt(document.getElementById("vaisseau").style.left);
 
     if (event.keyCode == 39 && bouger <= 690) {
