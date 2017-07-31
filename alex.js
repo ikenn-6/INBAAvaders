@@ -15,6 +15,7 @@ function tir(e)
 	if(currentTime - dernierTir > 1000 && e.keyCode==32)
 	{		
 		//console.log(currentTime);
+                
 			dernierTir = new Date();
 			var projectile = document.createElement("img");
                         projectile.setAttribute("src","images/projectile.JPG")

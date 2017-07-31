@@ -16,33 +16,33 @@ var checkcolli = setInterval(collision, 100);
 function collision() {
     
     
-
+if (null !=  document.getElementsByClassName('projectile')[0]){
+           
        
-       
+     
       var  projectile1 = document.getElementsByClassName('projectile')[0];
       
-        var positionbottom = parseInt(document.getElementById('alien').style.top);
-        console.log(positionbottom);
+        var positionbottom = parseInt(document.getElementById('alien').style.top); 
         var positionleftA = parseInt(document.getElementById('alien').style.left);
         var positionleftB = parseInt(projectile1.style.left);
       
         var tailleLA = parseInt(document.getElementById('alien').style.width);
         var tailleLB = parseInt(projectile1.style.width);       
         var positiontop = parseInt(projectile1.style.top);
-        console.log(positiontop);
+       
         
         
       
-        if (positiontop <= positionbottom + parseInt(document.getElementById('alien').style.height)) {
+        if (positiontop <= positionbottom + parseInt(document.getElementById('alien').style.height) ) {
         	
          alien.style.visibility = "hidden";
          projectile1.style.visibility = "hidden";
          document.location.href="index3.html";
         }
         
-       console.log(parseInt(document.getElementById('alien').style.height));
+       else {projectile1 = document.getElementsByClassName('projectile')[0];}
     }
 
 
    
-
+   }
